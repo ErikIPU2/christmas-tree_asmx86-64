@@ -34,7 +34,7 @@ print_string:
     call strlen
     mov rdx, rax
     mov rsi, rdi
-    mov rax, 1
+    mov rax, SYS_WRITE
     mov rdi, 1
     syscall
     ret
